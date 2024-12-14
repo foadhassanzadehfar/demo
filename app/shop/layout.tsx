@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="bg-[url('/assets/second_bg.png')] bg-cover bg-center h-screen w-screen font-dirooz">
+    <div className="bg-[url('/assets/second_bg.png')] bg-cover bg-center h-[844px] w-screen font-dirooz">
       <NavLinks />
       {children}
     </div>
