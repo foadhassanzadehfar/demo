@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+}
+.clip-polygon {
+  @apply relative;
+  clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* globals.css یا هر فایل CSS سفارشی دیگر */
+.clip-polygon-continue {
+  @apply relative;
+  clip-path: polygon(10% 0, 95% 6%, 100% 100%, 0% 100%);
+}
+
+.clip-polygon-nano {
+  @apply relative;
+  clip-path: polygon(50% 0%, 88% 0, 100% 48%, 91% 100%, 8% 99%, 0 53%, 7% 0);
+}
+.clip-polygon-truck {
+  @apply relative;
+  clip-path: polygon(0 0, 100% 0, 100% 37%, 14% 83%);
+}
+
+@font-face {
+  font-family: "Dirooz";
+  src: url("/app/fonts/Dirooz.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+.font-dirooz {
+  font-family: "Dirooz", sans-serif;
+}
