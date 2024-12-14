@@ -16,6 +16,7 @@ import Search from "@/public/icons/search.png";
 import ArrowLeft from "@/public/icons/arrow-left.png";
 
 import { useState } from "react";
+import { redirect } from "next/navigation";
 
 export function NavLinks() {
   // const pathname = usePathname();
@@ -116,7 +117,12 @@ export function NavLinks() {
 
                             <li className="font-bold text-md">استون</li>
                             <div className="stone">
-                              <div className="text-gray-300">طرح سنگ</div>
+                              <div
+                                className="text-gray-300"
+                                onClick={() => redirect("/shop?section=stone")}
+                              >
+                                طرح سنگ
+                              </div>
                               <div className="text-gray-300">لایت استون</div>
                             </div>
                             <li className="font-bold text-md">بتون</li>
